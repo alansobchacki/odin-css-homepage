@@ -1,0 +1,198 @@
+/* this website is designed for mobile first, desktop second */
+/* global rules */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+h1,
+h2 {
+  font-family: "Playfair Display";
+}
+
+#main-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-media-icon {
+  width: 50px;
+}
+
+/* top part of website */
+#presentation {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  position: relative;
+  text-align: left;
+
+  padding-top: 5%;
+  background: linear-gradient(135deg, #0891b2 50%, white 50%);
+  background-color: lightblue;
+  padding-bottom: 10%;
+}
+
+#top-photo {
+  max-width: 300px;
+  box-shadow: 0px 3px 5px rgb(214, 214, 214);
+}
+
+#presentation h1 {
+  position: absolute;
+  top: 50%;
+  left: 15%;
+
+  font-size: 4rem;
+  font-weight: 100;
+  color: white;
+  text-shadow: 2px 2px #000000;
+}
+
+#about-me {
+  display: grid;
+  grid-template: 0.2fr 1fr 0.4fr / 1fr;
+  justify-content: center;
+  justify-items: center;
+}
+
+#about-me h1 {
+  grid-row: 1 / 2;
+
+  font-weight: 150;
+  font-size: 3rem;
+}
+
+#about-me p {
+  grid-row: 2 / 3;
+
+  margin: 5%;
+  color: rgb(77, 77, 77);
+  line-height: 1.6;
+  font-size: 1.5rem;
+}
+
+#top-social-icons-container {
+  grid-row: 3 / 4;
+
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* mid part of website */
+#work {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 25%;
+}
+
+#work h1 {
+  font-weight: 150;
+  font-size: 3rem;
+  margin-bottom: -1%;
+}
+
+.project {
+  display: grid;
+  grid-template: 1fr 0.2fr 0.3fr / 1fr 0.2fr 0.2fr;
+  align-items: center;
+  justify-items: center;
+
+  margin: 5%;
+  box-shadow: 5px 5px 5px rgb(214, 214, 214);
+}
+
+.project-image {
+  grid-row: 1 / 2;
+  grid-column: 1 / 4;
+
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-color: lightblue;
+}
+
+.project-icon {
+  width: 30px;
+}
+
+.project-title {
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+
+  font-size: 1.6rem;
+}
+
+.first-icon {
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+}
+
+.second-icon {
+  grid-row: 2 / 3;
+  grid-column: 3 / 4;
+}
+
+.project-description {
+  grid-row: 3 / 4;
+  grid-column: 1 / 4;
+
+  font-size: 1.1rem;
+  margin: 5%;
+  margin-bottom: 25%;
+}
+
+/* bottom part of website */
+#contact-me {
+  display: flex;
+  flex-direction: column;
+  background-color: #0891b2;
+  color: white;
+  padding: 5%;
+}
+
+#contact-me h1 {
+  font-weight: 100;
+  font-size: 3rem;
+  text-align: center;
+  margin-top: -1%;
+  margin-bottom: -2%;
+}
+
+#contact-me h3 {
+  font-size: 1.7rem;
+  font-weight: 100;
+}
+
+#contact-me p {
+  font-size: 1.3rem;
+}
+
+#bottom-social-icons-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+#footer {
+  display: flex;
+}
+
+#bottom-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* css rules for desktop */
+/* global rules */
+@media (min-width: 700px) {
+  .photo {
+    max-width: 600px;
+  }
+}
