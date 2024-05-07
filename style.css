@@ -8,7 +8,8 @@ body {
 }
 
 h1,
-h2 {
+h2,
+figcaption {
   font-family: "Playfair Display";
 }
 
@@ -40,15 +41,13 @@ h2 {
   box-shadow: 0px 3px 5px rgb(214, 214, 214);
 }
 
-#presentation h1 {
+figcaption {
   position: absolute;
-  top: 50%;
-  left: 18%;
-
-  font-size: 4rem;
-  font-weight: 100;
+  text-align: center;
   color: white;
+  font-size: 4rem;
   text-shadow: 2px 2px #000000;
+  transform: translateY(165%);
 }
 
 #about-me {
@@ -190,8 +189,11 @@ h2 {
   object-fit: cover;
 }
 
-/* css rules for desktop */
-@media (min-width: 700px) {
+/* 
+//// css rules for desktop ////
+*/
+
+@media (min-width: 1200px) {
   /* global rules */
   #main-container {
     display: grid;
@@ -225,8 +227,17 @@ h2 {
     box-shadow: 0px 3px 5px rgb(214, 214, 214);
   }
 
+  figcaption {
+    transform: translateY(750%);
+    font-size: 2.6rem;
+    text-align: center;
+    padding: 8px 16px;
+  }
+
   #presentation h1 {
-    display: none;
+    font-size: 2.6rem;
+    bottom: 10px;
+    left: 50%;
   }
 
   #about-me {
@@ -312,6 +323,16 @@ h2 {
 
   .project {
     max-width: 350px;
+  }
+
+  .project-icon {
+    width: 30px;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .project-icon:hover {
+    transform: scale(1.2);
+    cursor: pointer;
   }
 
   /* bottom part of website */
