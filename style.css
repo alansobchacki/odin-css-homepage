@@ -1,4 +1,7 @@
-/* this website is designed for mobile first, desktop second */
+/* 
+//// css rules for smartphones ////
+*/
+
 /* global rules */
 body {
   margin: 0;
@@ -190,10 +193,27 @@ figcaption {
 }
 
 /* 
-//// css rules for desktop ////
+//// css rules for tablets / mobile devices on horizontal viewport ////
 */
 
-@media (min-width: 1200px) {
+@media (min-width: 600px) and (max-width: 1024px) {
+  #presentation {
+    background: linear-gradient(155deg, #0891b2 50%, white calc(50% + 2px));
+  }
+
+  figcaption {
+    transform: translateY(750%);
+    font-size: 2rem;
+    text-align: center;
+    padding: 8px 16px;
+  }
+}
+
+/* 
+//// css rules for desktop devices ////
+*/
+
+@media (min-width: 1024px) {
   /* global rules */
   #main-container {
     display: grid;
