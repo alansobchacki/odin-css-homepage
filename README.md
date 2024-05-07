@@ -22,6 +22,8 @@ Given a design brief, apply it to a website and make it responsive for:
 What I Learned
 -----
 
-Transforms, transitions, keyframes, responsive images, media queries, gradients! Lots of stuff to soak in for this project. I learned that there's a bit of a debate whether to design for mobiles first or second, and decided to agree with the mobile-first crowd. I still struggle a bit now and then to get the placement of stuff correctly with flexbox/grid, but I'm steadly improving. 
+Transforms, transitions, keyframes, responsive images, media queries, gradients! Lots of stuff to soak in for this project. I learned that there's a bit of a debate about whether to design for mobiles first or second, and decided to agree with the mobile-first crowd. 
+
+I still struggle a bit now and then to get the placement of stuff correctly with flexbox/grid, but I'm steadily improving. 
 
 Also, no frameworks were used in this project.
